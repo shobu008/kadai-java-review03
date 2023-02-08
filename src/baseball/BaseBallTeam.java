@@ -5,7 +5,6 @@ public class BaseBallTeam {
     private int win;
     private int lose;
     private int draw;
-    private double getRate;
     
     public BaseBallTeam() {
     }
@@ -18,8 +17,8 @@ public class BaseBallTeam {
     }
     
     public double getRate() {
-        getRate = (double) this.win / (this.win + this.lose);
-        return getRate;
+        double rate = (double) this.win / (this.win + this.lose);
+        return rate;
     }
     
     public void report() {
